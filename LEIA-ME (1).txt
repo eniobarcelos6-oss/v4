@@ -1,0 +1,14 @@
+COLOQUE OS MP3 NESTA PASTA, com estes nomes EXATOS (tudo minúsculo, com hífen, sem acento):
+
+  cadeira-cativa.mp3        -> Capítulo 1 (O começo)        Cadeira Cativa
+  ultima-saudade.mp3        -> Capítulo 2 (As lembranças)   Henrique & Juliano - Última Saudade
+  eu-te-seguro.mp3          -> Capítulo 3 (Sem roteiro)     Panda - Eu Te Seguro
+  pos.mp3                   -> Capítulo 4 (Senhoritinha)    Felipe & Rodrigo - Pós
+  mudando-de-assunto.mp3    -> Capítulo 5 (Sinceridade)     Henrique & Juliano - Mudando de Assunto
+
+AINDA SEM MÚSICA DEFINIDA (opcionais):
+  abertura.mp3   -> tela inicial
+  quiz.mp3       -> quiz
+  final.mp3      -> capítulo final
+
+Se um arquivo não existir, o site continua funcionando: o player só avisa qual arquivo está faltando.

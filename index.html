@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101d3d" />
+  <meta name="description" content="Uma história feita de lembranças, carinho e novos capítulos." />
+  <title>Entre lembranças e novos capítulos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div id="petals" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início"><span class="sun-mark">✺</span><span>entre lembranças</span></a>
+    <div class="top-actions"><span id="chapterLabel">uma história especial</span><button id="musicToggle" class="music-toggle" aria-label="Abrir música">♫ <span>Música</span></button></div>
+  </header>
+
+  <aside id="musicPanel" class="music-panel" aria-hidden="true">
+    <button id="musicClose" class="close" aria-label="Fechar painel">×</button>
+    <div class="music-kicker">TRILHA DESTE CAPÍTULO</div>
+    <div id="trackTitle" class="track-title">Uma trilha para este momento</div>
+    <div id="trackArtist" class="track-artist">Trilha deste capítulo</div>
+    <p id="trackNote" class="track-note">Cada parte pode ter uma música diferente. Quando você colocar os arquivos, basta atualizar os nomes em conteudo.js.</p>
+    <div class="audio-controls"><button id="playButton" class="small-btn">▶ Reproduzir</button><span id="audioStatus">Aguardando sua música</span></div>
+    <audio id="audioPlayer" preload="none"></audio>
+  </aside>
+
+  <main>
+    <section id="inicio" class="screen hero active" data-title="Abertura" data-track="abertura.mp3" data-song="Uma chegada tranquila" data-note="Uma trilha suave para abrir esta pequena lembrança.">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="line"></span> UMA HISTÓRIA FEITA DE PEQUENOS MOMENTOS <span class="line"></span></div>
+        <div class="hero-flower">✿</div>
+        <h1>Entre lembranças<br><em>e novos capítulos</em></h1>
+        <p class="hero-copy">Algumas amizades chegam de um jeito inesperado e, sem fazer alarde, acabam ocupando um lugar especial na nossa vida.</p>
+        <p class="hero-copy">A nossa teve risadas, conversas, brincadeiras, caminhadas sem rumo e momentos simples que se tornaram lembranças bonitas.</p>
+        <p class="hero-copy">O tempo passou, algumas coisas mudaram e veio uma pausa. Mas talvez nem toda pausa precise ser um fim.</p>
+        <button class="primary-btn" data-go="cap1">Começar nossa história <span>→</span></button>
+        <div class="scroll-hint">UM CAPÍTULO DE CADA VEZ <span>⌄</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="moon"></div><div class="hill hill-one"></div><div class="hill hill-two"></div><div class="lily lily-one">✿</div><div class="lily lily-two">✿</div><div class="sun-emblem">✺</div></div>
+    </section>
+
+    <section id="cap1" class="screen chapter" data-title="O começo" data-track="comeco.mp3" data-song="O começo de tudo" data-note="Uma música leve para lembrar de como uma amizade pode crescer nos detalhes.">
+      <div class="chapter-number">01 / O COMEÇO</div><div class="chapter-grid">
+        <div class="chapter-text"><p class="eyebrow">NÃO PRECISOU DE MUITO</p><h2>Como tudo se tornou <em>especial</em></h2>
+          <p>Às vezes, uma amizade vai sendo construída sem que a gente perceba. Uma conversa puxa outra, uma brincadeira vira costume e, quando vemos, aquela pessoa já faz parte de vários momentos do nosso dia.</p>
+          <p>Foi assim: entre risadas, confiança, implicâncias e conversas que pareciam não ter hora para acabar.</p>
+          <p>Não foram grandes acontecimentos que fizeram tudo ser importante. Foram os pequenos momentos — justamente aqueles que a gente nem imaginava que um dia sentiria tanta saudade.</p>
+          <button class="text-btn" data-go="cap2">Continuar <span>→</span></button>
+        </div>
+        <div class="photo-frame tall"><div class="photo-placeholder" data-photo="foto-01.jpg"><span>✿</span><small>ADICIONE UMA FOTO DE VOCÊS</small></div><div class="frame-caption">um começo cheio de histórias</div></div>
+      </div>
+    </section>
+
+    <section id="cap2" class="screen chapter" data-title="As lembranças" data-track="lembrancas.mp3" data-song="Pequenos momentos" data-note="Aqui combina uma música que tenha aquele sentimento bom de recordar.">
+      <div class="chapter-number">02 / AS LEMBRANÇAS</div><div class="center-heading"><p class="eyebrow">COISAS QUE FICARAM</p><h2>Pequenos momentos,<br><em>grandes lembranças</em></h2><p>Algumas fotos guardam muito mais do que aquilo que aparece nelas.</p></div>
+      <div class="gallery">
+        <button class="gallery-card wide" data-photo="foto-02.jpg"><span class="photo-placeholder"><b>✿</b><small>FOTO 02</small></span><span class="gallery-caption">Aquelas risadas que surgiam do nada.</span></button>
+        <button class="gallery-card" data-photo="foto-03.jpg"><span class="photo-placeholder"><b>✿</b><small>FOTO 03</small></span><span class="gallery-caption">Um dia comum que virou lembrança.</span></button>
+        <button class="gallery-card" data-photo="foto-04.jpg"><span class="photo-placeholder"><b>✿</b><small>FOTO 04</small></span><span class="gallery-caption">Mais uma história para guardar.</span></button>
+      </div>
+      <p class="gallery-help">Toque em uma foto para ampliar. As imagens são espaços reservados para suas fotos.</p>
+      <button class="text-btn center-btn" data-go="cap3">Próximo capítulo <span>→</span></button>
+    </section>
+
+    <section id="cap3" class="screen chapter coast" data-title="Sem roteiro" data-track="sem-roteiro.mp3" data-song="Sem roteiro" data-note="Uma faixa sertaneja leve ou com clima de estrada combina com esse capítulo.">
+      <div class="chapter-number">03 / SEM ROTEIRO</div><div class="coast-content"><p class="eyebrow">NÃO PRECISAVA TER DESTINO</p><h2>Sem roteiro,<br><em>mas com boas histórias</em></h2>
+        <p>Uma das coisas mais legais era simplesmente sair andando, sem saber direito para onde ir. Não precisava de um grande plano. A companhia já fazia o passeio valer a pena.</p>
+        <p>E tinha aqueles dias em que o estágio acabava mais cedo: copão, calçada e conversa. A gente sentava, falava de tudo, ria de qualquer coisa e deixava o tempo passar.</p>
+        <p>Talvez fossem momentos simples para quem olhasse de fora. Para mim, são lembranças que têm um lugar especial.</p>
+        <div class="memory-stamp">SEM PRESSA · SEM ROTEIRO · COM HISTÓRIA</div>
+        <button class="text-btn" data-go="cap4">Tem mais <span>→</span></button>
+      </div>
+      <div class="coast-photo"><div class="photo-placeholder" data-photo="foto-05.jpg"><span>☼</span><small>UMA FOTO DESSE TEMPO</small></div></div>
+    </section>
+
+    <section id="cap4" class="screen chapter rapunzel" data-title="Senhoritinha" data-track="senhoritinha.mp3" data-song="Senhoritinha" data-note="Aqui cabe uma música divertida, com um toque de leveza e carinho.">
+      <div class="chapter-number">04 / UM APELIDO INCONFUNDÍVEL</div><div class="rapunzel-layout">
+        <div class="sun-art" aria-hidden="true"><div class="sun-ring">✺</div><div class="sun-center">☼</div><span class="tiny-star s1">✦</span><span class="tiny-star s2">✧</span><span class="tiny-star s3">✦</span></div>
+        <div class="chapter-text"><p class="eyebrow">VOCÊ SABE DE QUEM ESTOU FALANDO</p><h2>Senhoritinha <em>♡</em></h2>
+          <p>Tem apelido que só faz sentido para quem viveu a história. E esse aqui dispensa explicações.</p>
+          <p>Entre brincadeiras, implicâncias e referências que só a gente entende, algumas palavras acabam virando parte da memória.</p>
+          <p>E já que estamos falando de você: que nunca faltem coragem, sonhos grandes e um pouquinho daquela magia de quem acredita que ainda existem muitos caminhos bonitos pela frente.</p>
+          <div class="small-sun">UM PEQUENO SOL, SÓ PARA VOCÊ ✺</div><button class="text-btn" data-go="cap5">Continuar <span>→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cap5" class="screen chapter reflection" data-title="O que precisava ser dito" data-track="reflexao.mp3" data-song="Algumas coisas precisam ser ditas" data-note="Uma música mais calma e sincera pode acompanhar este momento.">
+      <div class="chapter-number">05 / COM SINCERIDADE</div><div class="reflection-card"><div class="lily-mark">✿</div><p class="eyebrow">SEM COBRANÇA, COM CARINHO</p><h2>Algumas coisas<br><em>precisam ser ditas</em></h2>
+        <p>Eu sei que nem tudo foi perfeito. Houve desentendimentos, palavras que poderiam ter sido diferentes e situações que acabaram criando uma distância entre nós.</p>
+        <p>Não quero transformar este espaço em uma cobrança, nem dizer que só existe uma maneira certa de lidar com tudo. Cada um tem seu tempo, seus motivos e sua forma de sentir.</p>
+        <p>Mas também não queria fingir que a nossa amizade não foi importante. Foi — e continua sendo uma lembrança pela qual tenho carinho e respeito.</p>
+        <p>Se algum dia você também sentir vontade de conversar, eu gostaria. Sem pressa, sem obrigação e sem precisar resolver tudo de uma vez.</p>
+        <div class="signature">Com carinho, de alguém que torce por você.</div>
+        <button class="text-btn" data-go="quiz">Vamos às lembranças <span>→</span></button>
+      </div>
+    </section>
+
+    <section id="quiz" class="screen chapter quiz-screen" data-title="Você lembra?" data-track="quiz.mp3" data-song="Um intervalo leve" data-note="Uma trilha divertida e discreta para acompanhar as lembranças.">
+      <div class="chapter-number">06 / UM PEQUENO JOGO</div><div class="quiz-wrap"><p class="eyebrow">SEM NOTA, SEM PRESSÃO</p><h2>Você lembra da <em>nossa história?</em></h2><p class="quiz-intro">Um passeio por algumas lembranças. Acerte, erre, ria — a ideia é só recordar.</p>
+        <div class="quiz-progress"><span id="quizProgress"></span></div><div class="quiz-meta"><span id="quizPhase">FASE 1 · VOCÊ LEMBRA?</span><span id="quizCount">01 / 08</span></div>
+        <div id="quizCard" class="quiz-card"><h3 id="questionText"></h3><div id="answers" class="answers"></div><div id="feedback" class="feedback" aria-live="polite"></div><button id="nextQuestion" class="primary-btn next-btn" disabled>Próxima lembrança →</button></div>
+        <div id="quizDone" class="quiz-done" hidden><div class="done-flower">✿</div><h3>Algumas lembranças continuam vivas.</h3><p>Mesmo quando o tempo passa, aquilo que foi bonito não precisa deixar de ter valor.</p><button class="primary-btn" data-go="final">Chegar ao último capítulo <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section id="final" class="screen final-screen" data-title="Novos capítulos" data-track="final.mp3" data-song="Ainda há espaço para novos capítulos" data-note="Escolha uma música especial para o encerramento. A trilha toca somente quando você apertar reproduzir.">
+      <div id="lanterns" class="lantern-field" aria-hidden="true"></div><div class="final-content"><div class="final-sun">✺</div><p class="eyebrow">E AGORA?</p><h2>E se nossa história<br> ainda tiver <em>novos capítulos?</em></h2>
+        <p>Algumas pessoas merecem continuar fazendo parte dos nossos dias. Às vezes, isso começa com uma lembrança, uma conversa inesperada ou até mesmo um reels enviado sem contexto.</p>
+        <p>Não existe obrigação de resposta, nem pressa. Só queria deixar a porta aberta — com carinho e respeito pelo seu tempo.</p>
+        <div class="final-actions"><a class="contact-link instagram" id="instagramLink" href="#" target="_blank" rel="noopener">♡ <span><small>PARA OS REELS</small>Me manda um reels?</span> ↗</a><a class="contact-link whatsapp" id="whatsappLink" href="#" target="_blank" rel="noopener">✉ <span><small>PARA CONVERSAR</small>Mensagens, carinho e cuidado</span> ↗</a></div>
+        <div class="final-quote">“Nem toda pausa precisa ser um fim.”</div><div class="final-sign">Feito com carinho. ✿</div>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true"><button id="lightboxClose" aria-label="Fechar imagem">×</button><img id="lightboxImage" alt="Foto ampliada"></div>
+  <nav class="chapter-nav" aria-label="Navegação dos capítulos"><button id="prevChapter" aria-label="Capítulo anterior">←</button><div class="nav-dots" id="navDots"></div><button id="nextChapter" aria-label="Próximo capítulo">→</button></nav>
+  <script src="conteudo.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
